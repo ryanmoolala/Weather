@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="weatherapp">
+
+        <div class="content">
+            <h1 class="temp" id="temp-id"></h1>
+            <div class="city">
+            <h1 class="location"></h1>
+                <small class = 'time-box'>
+                    <span class="time">00</span><span id="minutes">00</span>
+                    -
+                    <span class="date"></span>
+                </small>
+             </div>
+             <div class="weather-condition">
+                <img src="./icons/day/113.png" class="icon" alt="icon" width="50" height="50"/>
+                <span class="condition">Sunny</span>
+             </div>
+        </div>
+        
+
+        <div class="side-panel">
+            <form id="location-input">
+                <input 
+                type="text"
+                class="search"
+                placeholder="Search location..."
+                />
+                <button type="submit" class="submit">
+                    <i class="fas fa-search" >Go</i>
+                </button>
+            </form>
+    
+            <ul class="cities">
+                <li class="city">Singapore</li>
+                <li class="city">New York</li>
+                <li class="city">Tokyo</li>
+                <li class="city">Paris</li>
+            </ul>
+    
+            <ul class="weather-details">
+                <h4>Weather details</h4>
+                <li>
+                    <span>Cloudy</span>
+                    <span class="cloud">50%</span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <span class="humidity">69%</span>
+                </li>
+                <li>
+                    <span>Wind</span>
+                    <span class="wind">8km/h</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!--REAL TIME WEATHER APP-->
+<!--weather report app has to 1. show icon of weather, 2. tell the weather condition (word) 3. tell temperature(in farenheit or degrees) 4.location (singapore)-->
